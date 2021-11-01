@@ -2,12 +2,12 @@ import unidecode
 import aiml
 
 def learn_aiml(kernel):
-    kernel.learn("greetings_chat.aiml")
-    kernel.learn("cuttings_chat.aiml")
-    kernel.learn("color_chat.aiml")
-    kernel.learn("style_chat.aiml")
-    kernel.learn("sumup_chat.aiml")
-    kernel.learn("farewell_chat.aiml")
+    kernel.learn("aiml-files/greetings_chat.aiml")
+    kernel.learn("aiml-files/cuttings_chat.aiml")
+    kernel.learn("aiml-files/color_chat.aiml")
+    kernel.learn("aiml-files/style_chat.aiml")
+    kernel.learn("aiml-files/sumup_chat.aiml")
+    kernel.learn("aiml-files/farewell_chat.aiml")
 
 
 def main():
