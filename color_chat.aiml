@@ -1,0 +1,285 @@
+<aiml version="1.0">
+<topic name="KOLOR">
+    <category>
+        <pattern>*</pattern>
+        <template>
+            Nie do końca rozumiem, jaki kolor Pani woli z wyżej wymienionych?
+        </template>
+    </category>
+
+    <category>
+        <pattern>STYL</pattern>
+        <template>
+            <random>
+                <li>A myślała Pani o stylu sukienki? Jaki by Pani preferowała?</li>
+                <li>A w jakim stylu chce mieć Pani sukienkę?</li>
+                <li>W jakim stylu powinna być suknia?</li>
+            </random>
+            Może być w boho, klasycznym lub glamour.
+            <think><set name="topic">STYL</set></think> 
+        </template>
+    </category>
+
+    <category>
+        <pattern>KOLORY</pattern>
+        <template>
+            Śmietanka jest odcieniem białym przełamanym nutą beżu, kość słoniowa to typowe ecru (odcień beżowego), karmel bazuje na bieli z odcieniami brązów, a śnieżnobiały jest typową intensywną bielą.
+        </template>
+    </category>
+    <category>
+        <pattern> KOLORY *</pattern>
+        <template> 
+            <srai> KOLORY </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>_ KOLORY *</pattern>
+        <template> 
+            <srai> KOLORY </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> ODCIENIE *</pattern>
+        <template> 
+            <srai> KOLORY </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>_ ODCIENIE *</pattern>
+        <template> 
+            <srai> KOLORY </srai>
+        </template> 
+    </category>
+
+    <category>
+        <pattern> SMIETANKA </pattern>
+        <template>
+            <think><set name="color">śmietanki</set></think>
+            <srai> STYL </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>_ SMIETANKA *</pattern>
+        <template> 
+            <srai> SMIETANKA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> * SMIETANKA</pattern>
+        <template> 
+            <srai> SMIETANKA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> SMIETANKI</pattern>
+        <template> 
+            <srai> SMIETANKA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> _  SMIETANKI *</pattern>
+        <template> 
+            <srai> SMIETANKA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> * SMIETANKI</pattern>
+        <template> 
+            <srai> SMIETANKA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> SMIETANKE</pattern>
+        <template> 
+            <srai> SMIETANKA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> _  SMIETANKE *</pattern>
+        <template> 
+            <srai> SMIETANKA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> * SMIETANKE</pattern>
+        <template> 
+            <srai> SMIETANKA </srai>
+        </template> 
+    </category>
+
+    <category>
+        <pattern> KOSC </pattern>
+        <template>
+            <think><set name="color">kości słoniowej</set></think>
+            <srai> STYL </srai>
+        </template>
+    </category>
+    <category>
+        <pattern> _ KOSC *</pattern>
+        <template> 
+            <srai> KOSC </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> * KOSC</pattern>
+        <template> 
+            <srai> KOSC </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> KOSCI</pattern>
+        <template> 
+            <srai> KOSC </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> KOSCI *</pattern>
+        <template> 
+            <srai> KOSC </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> * KOSCI</pattern>
+        <template> 
+            <srai> KOSC </srai>
+        </template> 
+    </category>
+
+    <category>
+        <pattern> KARMEL </pattern>
+        <template>
+            <think><set name="color">karmelu</set></think>
+            <srai> STYL </srai>
+        </template>
+    </category>
+    <category>
+        <pattern> _ KARMEL *</pattern>
+        <template> 
+            <srai> KARMEL </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> * KARMEL</pattern>
+        <template> 
+            <srai> KARMEL </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> KARMELOWYM</pattern>
+        <template> 
+            <srai> KARMEL </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> KARMELOWYM *</pattern>
+        <template> 
+            <srai> KARMEL </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> * KARMELOWYM</pattern>
+        <template> 
+            <srai> KARMEL </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> KARMELU </pattern>
+        <template> 
+            <srai> KARMEL </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> _ KARMELU *</pattern>
+        <template> 
+            <srai> KARMEL </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> * KARMELU</pattern>
+        <template> 
+            <srai> KARMEL </srai>
+        </template> 
+    </category>
+
+    <category>
+        <pattern> SNIEZNOBIALY </pattern>
+        <template>
+            <think><set name="color">śnieżnobiałym</set></think>
+            <srai> STYL </srai>
+        </template>
+    </category>
+    <category>
+        <pattern> _ SNIEZNOBIALY *</pattern>
+        <template> 
+            <srai> SNIEZNOBIALY </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> * SNIEZNOBIALY</pattern>
+        <template> 
+            <srai> SNIEZNOBIALY </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> SNIEZNOBIALYM</pattern>
+        <template> 
+            <srai> SNIEZNOBIALY </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> _ SNIEZNOBIALYM *</pattern>
+        <template> 
+            <srai> SNIEZNOBIALY </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> * SNIEZNOBIALYM</pattern>
+        <template> 
+            <srai> SNIEZNOBIALY </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> SNIEZNEJBIELI </pattern>
+        <template> 
+            <srai> SNIEZNOBIALY </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> _ SNIEZNEJBIELI *</pattern>
+        <template> 
+            <srai> SNIEZNOBIALY </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> * SNIEZNEJBIELI</pattern>
+        <template> 
+            <srai> SNIEZNOBIALY </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> BIALY </pattern>
+        <template> 
+            <srai> SNIEZNOBIALY </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> _ BIALY *</pattern>
+        <template> 
+            <srai> SNIEZNOBIALY </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> * BIALY </pattern>
+        <template> 
+            <srai> SNIEZNOBIALY </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> BIALY * </pattern>
+        <template> 
+            <srai> SNIEZNOBIALY </srai>
+        </template> 
+    </category>
+
+</topic>
+</aiml>

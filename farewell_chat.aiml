@@ -1,0 +1,101 @@
+<aiml version="1.0">
+    <category>
+        <pattern>DO WIDZENIA</pattern>
+        <template> 
+            <random>
+                <li>Do zobaczenia!</li>
+                <li>Do widzenia!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>* DO WIDZENIA</pattern>
+        <template> 
+            <srai> DO WIDZENIA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>DO WIDZENIA *</pattern>
+        <template> 
+            <srai> DO WIDZENIA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>_ DO WIDZENIA *</pattern>
+        <template> 
+            <srai> DO WIDZENIA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>CZESC</pattern>
+        <template> 
+            <srai> DO WIDZENIA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>* CZESC</pattern>
+        <template> 
+            <srai> DO WIDZENIA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>CZESC *</pattern>
+        <template> 
+            <srai> DO WIDZENIA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>_ CZESC *</pattern>
+        <template> 
+            <srai> DO WIDZENIA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>ZEGNAM</pattern>
+        <template> 
+            <srai> DO WIDZENIA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>* ZEGNAM</pattern>
+        <template> 
+            <srai> DO WIDZENIA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>ZEGNAM *</pattern>
+        <template> 
+            <srai> DO WIDZENIA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> _ ZEGNAM *</pattern>
+        <template> 
+            <srai> DO WIDZENIA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>DOBREGO WIECZORU</pattern>
+        <template> 
+            <srai> DO WIDZENIA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>* DOBREGO WIECZORU</pattern>
+        <template> 
+            <srai> DO WIDZENIA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>DOBREGO WIECZORU *</pattern>
+        <template> 
+            <srai> DO WIDZENIA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> _ DOBREGO WIECZORU *</pattern>
+        <template> 
+            <srai> DO WIDZENIA </srai>
+        </template> 
+    </category>
+</aiml> 

@@ -1,0 +1,212 @@
+<aiml version="1.0">
+<topic name="KROJ">
+    <category>
+        <pattern>*</pattern>
+        <template>
+            <random>
+                <li>Rozumiem,</li>
+                <li>Dobrze,</li>
+                <li>Mhm,</li>
+            </random>
+            w naszym salonie dostępne są kroje typu: rybka (bardzo przyległa), księżniczka (mocno rozkloszowana), litera A oraz prosta.
+            Który by Pani odpowiadał?
+        </template>
+    </category>
+
+    <category>
+        <pattern> KOLOR </pattern>
+        <template>
+            <random>
+                <li>Świetnie,</li>
+                <li>W porządku,</li>
+            </random>
+            a jaki kolor Pani preferuje? Suknie mamy dostępne w kolorze śmietanki, kości słoniowej, karmelu i śnieżnobiałym.
+            <think><set name="topic">KOLOR</set></think> 
+        </template>
+    </category>
+
+    <category>
+        <pattern> RYBKA </pattern>
+        <template>
+            <think><set name="cutting">rybki</set></think>
+            <srai> KOLOR </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>_ RYBKA *</pattern>
+        <template> 
+            <srai> RYBKA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> * RYBKA</pattern>
+        <template> 
+            <srai> RYBKA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> RYBKE</pattern>
+        <template> 
+            <srai> RYBKA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>_ RYBKE *</pattern>
+        <template> 
+            <srai> RYBKA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> * RYBKE</pattern>
+        <template> 
+            <srai> RYBKA </srai>
+        </template> 
+    </category>
+
+    <category>
+        <pattern> KSIEZNICZKA </pattern>
+        <template>
+            <think><set name="cutting">księżniczki</set></think> 
+            <srai> KOLOR </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>_ KSIEZNICZKA *</pattern>
+        <template> 
+            <srai> KSIEZNICZKA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> * KSIEZNICZKA</pattern>
+        <template> 
+            <srai> KSIEZNICZKA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> KSIEZNICZKE</pattern>
+        <template> 
+            <srai> KSIEZNICZKA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>_ KSIEZNICZKE *</pattern>
+        <template> 
+            <srai> KSIEZNICZKA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> * KSIEZNICZKE</pattern>
+        <template> 
+            <srai> KSIEZNICZKA </srai>
+        </template> 
+    </category>
+
+
+<category>
+        <pattern> LITERA </pattern>
+        <template>
+            <think><set name="cutting">literki A</set></think> 
+            <srai> KOLOR </srai>
+        </template>
+    </category>
+     <category>
+        <pattern>LITERA *</pattern>
+        <template> 
+            <srai> LITERA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>_ LITERA *</pattern>
+        <template> 
+            <srai> LITERA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> * LITERA</pattern>
+        <template> 
+            <srai> LITERA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> LITERE</pattern>
+        <template> 
+            <srai> LITERA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>_ LITERE *</pattern>
+        <template> 
+            <srai> LITERA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> * LITERE</pattern>
+        <template> 
+            <srai> LITERA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> LITERKA </pattern>
+        <template> 
+            <srai> LITERA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>_ LITERKA *</pattern>
+        <template> 
+            <srai> LITERA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> * LITERKA</pattern>
+        <template> 
+            <srai> LITERA </srai>
+        </template> 
+    </category>
+     <category>
+        <pattern>LITERKA *</pattern>
+        <template> 
+            <srai> LITERA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> LITERKE</pattern>
+        <template> 
+            <srai> LITERA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>_ LITERKE *</pattern>
+        <template> 
+            <srai> LITERA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> * LITERKE</pattern>
+        <template> 
+            <srai> LITERA </srai>
+        </template> 
+    </category>
+    
+    <category>
+        <pattern> PROSTA </pattern>
+        <template>
+            <think><set name="cutting">prostym</set></think> 
+            <srai> KOLOR </srai> 
+        </template>
+    </category>
+    <category>
+        <pattern>_ PROSTA *</pattern>
+        <template> 
+            <srai> PROSTA </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> * PROSTA</pattern>
+        <template> 
+            <srai> PROSTA </srai>
+        </template> 
+    </category>
+
+</topic>
+</aiml>
