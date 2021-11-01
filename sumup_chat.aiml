@@ -1,0 +1,76 @@
+<aiml version="1.0">
+<topic name="PODSUMOWANIE">
+    <category>
+        <pattern>*</pattern>
+        <template>
+            <srai>TAK</srai>
+        </template>
+    </category>
+
+    <category>
+            <pattern>TAK</pattern>
+            <template>W takim razie zapraszam do przymierzalni.
+            <think>
+                <set name="topic">ZAKONCZENIE</set>
+            </think>
+            </template>
+        </category>
+        <category>
+            <pattern>TAK *</pattern>
+            <template>
+                <srai>TAK</srai>
+            </template>
+        </category>
+        <category>
+            <pattern>_ TAK *</pattern>
+            <template>
+                <srai>TAK</srai>
+            </template>
+        </category>
+        <category>
+            <pattern>_ TAK</pattern>
+            <template>
+                <srai>TAK</srai>
+            </template>
+        </category>
+
+        <category>
+            <pattern>NIE</pattern>
+            <template>
+                Czy coś źle zrozumiałam? Jaki krój sukienki Pani preferuje?
+                <think>
+                    <set name="topic">KROJ</set>
+                </think>
+            </template>
+        </category>
+        <category>
+            <pattern>NIE *</pattern>
+            <template>
+                <srai>NIE</srai>
+            </template>
+        </category>
+        <category>
+            <pattern>_ NIE *</pattern>
+            <template>
+                <srai>NIE</srai>
+            </template>
+        </category>
+        <category>
+            <pattern>_ NIE</pattern>
+            <template>
+                <srai>NIE</srai>
+            </template>
+        </category>
+</topic>
+
+<topic name="ZAKONCZENIE">
+    <category>
+        <pattern>*</pattern>
+        <template>
+            Czas oczekiwania na suknie w naszym salonie wynosi do 6 miesięcy, więc jak Pani się zdecyduje, zapraszamy do kontaktu.
+            <think> <set name="topic">none</set> </think>
+            <srai>DO WIDZENIA</srai>
+        </template>
+    </category>
+</topic>
+</aiml>

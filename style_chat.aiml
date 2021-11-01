@@ -1,0 +1,94 @@
+<aiml version="1.0">
+<topic name="STYL">
+    <category>
+        <pattern>*</pattern>
+        <template>
+            Nie do końca rozumiem, w jakim stylu preferuje Pani suukienkę?
+        </template>
+    </category>
+
+    <category>
+        <pattern>PODSUMOWANIE</pattern>
+        <template>
+            <random>
+                <li>Okej,</li>
+                <li>Dobrze,</li>
+                <li>Oczywiscie,</li>
+                <li>Super,</li>
+            </random>
+            już wiem czego Pani potrzebuje. Czyli szukamy sukni
+            w stylu <get name="style"></get>,
+            o kroju <get name="cutting"></get> i 
+            w kolorze <get name="color"></get>.
+            <think><set name="topic">PODSUMOWANIE</set></think> 
+        </template>
+    </category>
+
+    <category>
+        <pattern> BOHO </pattern>
+        <template>
+            <think><set name="style">boho</set></think>
+            <srai> PODSUMOWANIE </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>_ BOHO *</pattern>
+        <template> 
+            <srai> BOHO </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> * BOHO</pattern>
+        <template> 
+            <srai> BOHO </srai>
+        </template> 
+    </category>
+
+    <category>
+        <pattern> KLASYCZNY </pattern>
+        <template>
+            <think><set name="style">klasycznym</set></think>
+            <srai> PODSUMOWANIE </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>KLASYCZNYM</pattern>
+        <template> 
+            <srai> KLASYCZNY </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>_ KLASYCZNYM *</pattern>
+        <template> 
+            <srai> KLASYCZNYM </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> * KLASYCZNYM</pattern>
+        <template> 
+            <srai> KLASYCZNYM </srai>
+        </template> 
+    </category>
+
+    <category>
+        <pattern> GLAMOUR </pattern>
+        <template>
+            <think><set name="style">glamour</set></think>
+            <srai> PODSUMOWANIE </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>_ GLAMOUR *</pattern>
+        <template> 
+            <srai> GLAMOUR </srai>
+        </template> 
+    </category>
+    <category>
+        <pattern> * GLAMOUR</pattern>
+        <template> 
+            <srai> GLAMOUR </srai>
+        </template> 
+    </category>
+
+</topic>
+</aiml>
