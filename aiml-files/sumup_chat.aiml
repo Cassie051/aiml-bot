@@ -9,7 +9,89 @@
 
     <category>
             <pattern>TAK</pattern>
-            <template>W takim razie zapraszam do przymierzalni.
+            <template>
+            W takim razie prponuję
+            <condition name = "cutting" value = "rybki">
+                <condition name = "style" value = "klasycznym">
+                <random>
+                    <li>Margaret w cenie 3 500 zł</li>
+                    <li>Cristine w cenie 4 000 zł</li>
+                </random>
+                </condition>
+                <condition name = "style" value = "boho">
+                <random>
+                    <li>Pocahontas w cenie 3 000 zł</li>
+                    <li>Jassmine w cenie 3 900 zł</li>
+                </random>
+                </condition>
+                <condition name = "style" value = "glamour">
+                <random>
+                    <li>Megan w cenie 3 200 zł</li>
+                    <li>Luxury w cenie 4 300 zł</li>
+                </random>
+                </condition>
+            </condition>
+            <condition name = "cutting" value = "księżniczki">
+                <condition name = "style" value = "klasycznym">
+                <random>
+                    <li>Dearest Lady w cenie 3 700 zł</li>
+                    <li>Monica w cenie 4 200 zł</li>
+                </random>
+                </condition>
+                <condition name = "style" value = "boho">
+                <random>
+                    <li>Ann w cenie 3 200 zł</li>
+                    <li>Sophie w cenie 3 400 zł</li>
+                </random>
+                </condition>
+                <condition name = "style" value = "glamour">
+                <random>
+                    <li>Hailey w cenie 3 100 zł</li>
+                    <li>Stephani w cenie 4 299 zł</li>
+                </random>
+                </condition>
+            </condition>
+            <condition name = "cutting" value = "literki A">
+                <condition name = "style" value = "klasycznym">
+                <random>
+                    <li>Ava Lady w cenie 3 290 zł</li>
+                    <li>Emma w cenie 4 400 zł</li>
+                </random>
+                </condition>
+                <condition name = "style" value = "boho">
+                <random>
+                    <li>Mia w cenie 3 200 zł</li>
+                    <li>Amelia w cenie 2 800 zł</li>
+                </random>
+                </condition>
+                <condition name = "style" value = "glamour">
+                <random>
+                    <li>Isabella w cenie 3 199 zł</li>
+                    <li>Charlotte w cenie 4 699 zł</li>
+                </random>
+                </condition>
+            </condition>
+            <condition name = "cutting" value = "prostym">
+                <condition name = "style" value = "klasycznym">
+                <random>
+                    <li>Camila Lady w cenie 3 599 zł</li>
+                    <li>Chloe w cenie 4 100 zł</li>
+                </random>
+                </condition>
+                <condition name = "style" value = "boho">
+                <random>
+                    <li>Hannah w cenie 3 400 zł</li>
+                    <li>Stella w cenie 3 700 zł</li>
+                </random>
+                </condition>
+                <condition name = "style" value = "glamour">
+                <random>
+                    <li>Aurora w cenie 3 500 zł</li>
+                    <li>Victoria w cenie 3 699 zł</li>
+                </random>
+                </condition>
+            </condition>
+            w kolorze <get name="color"></get>.
             <think>
                 <set name="topic">ZAKONCZENIE</set>
             </think>
